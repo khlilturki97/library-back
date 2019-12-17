@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Repositories;
+
+use App\DummyModel;
+
+/**
+ * Class DummyClass
+ * @package App\Repositories
+ */
+class DummyClass extends CrudRepository
+{
+    /**
+     * DummyClass constructor.
+     * @param DummyModel $dummyModel
+     */
+    public function __construct(DummyModel $dummyModel)
+    {
+        parent::__construct($dummyModel);
+    }
+}
